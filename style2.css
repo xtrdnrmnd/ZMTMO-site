@@ -1,0 +1,49 @@
+.table {
+    width: 400px;
+    height: 300px;
+    top: 200px;
+    position: absolute;
+    background: white;
+    color: black;
+}
+
+th,td {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    background: white;
+}
+
+#prop {
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    top: 550px;
+    left:100px;
+}
+
+form {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #A6D23F;
+}
+
+label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+}
+
+#sub_btn {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #A6D23F;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    left: 177px;
+    border-radius: 12px;
+}
+
+.lang {
+    background-color: #A6D23F;
+    border-radius: 12px;
+}
