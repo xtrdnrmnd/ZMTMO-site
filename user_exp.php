@@ -1,4 +1,35 @@
 <!DOCTYPE html>
+<?php
+include('language.php');
+$en_select='';
+$sk_select='';
+$ru_select='';
+$language = '';
+if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='ru') || !isset($_COOKIE['lang'])) {
+    $ru_select='selected';
+        $language='ru';
+}
+if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='sk') || !isset($_COOKIE['lang'])) {
+    $sk_select='selected';
+    $language='sk';
+}
+if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='en') || !isset($_COOKIE['lang'])) {
+    $en_select='selected';
+        $language='en';
+}
+if ((isset($_GET['language']) && $_GET['language']=='ru') || !isset($_GET['language'])) {
+    $ru_select='selected';
+        $language='ru';
+}
+if ((isset($_GET['language']) && $_GET['language']=='sk') || !isset($_GET['language'])) {
+    $sk_select='selected';
+    $language='sk';
+}
+if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['language'])) {
+    $en_select='selected';
+        $language='en';
+}
+?>
 <html>
     <head>
         <title>user</title>
@@ -15,11 +46,28 @@
             <a href="accessories.php" >Accessories</a>
             <a href="buy.php" >Compare</a>
             <a href="contacts.php">Contacts</a>
-            <select onchange="set_language()" name="language" id="language" class="lang">
-                <option value="en" >ENG</option>
-                <option value="ru" >RU</option>
-                <option value="sk" >SK</option>
-            </select>
+                    <select onchange="set_language()" name="language" id="language" class="lang">
+                        <?php
+    $en_select='';
+               $sk_select='';
+                $ru_select='';
+               if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['language'])) 
+               {
+                   $en_select='selected';
+               }
+               if ((isset($_GET['language']) && $_GET['language']=='sk') || !isset($_GET['language']))
+               {
+                   $sk_select='selected';
+               }
+                if ((isset($_GET['language']) && $_GET['language']=='ru') || !isset($_GET['language']))
+                {
+                    $ru_select='selected';
+                }
+                        ?>
+                        <option value="ru" <?php echo $ru_select?>>RU</option>
+                        <option value="sk" <?php echo $sk_select?>>SK</option>
+                        <option value="en" <?php echo $en_select?>>ENG</option>
+                    </select>
             <hr>
         </header>
         <form action="" method="POST">

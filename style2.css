@@ -44,6 +44,8 @@ label {
 }
 
 .lang {
+    font-family: 'Roboto Mono', monospace;
     background-color: #A6D23F;
-    border-radius: 12px;
+    font-size: 20px;
+    border-radius: 10px;
 }

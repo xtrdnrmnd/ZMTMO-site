@@ -5,6 +5,18 @@ $en_select='';
 $sk_select='';
 $ru_select='';
 $language='';
+if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='ru') || !isset($_COOKIE['lang'])) {
+    $ru_select='selected';
+        $language='ru';
+}
+if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='sk') || !isset($_COOKIE['lang'])) {
+    $sk_select='selected';
+    $language='sk';
+}
+if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='en') || !isset($_COOKIE['lang'])) {
+    $en_select='selected';
+        $language='en';
+}
 if ((isset($_GET['language']) && $_GET['language']=='ru') || !isset($_GET['language'])) {
     $ru_select='selected';
         $language='ru';
@@ -40,7 +52,7 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
         <header>
             <img src="Media/logo1.svg" id="logo">
             <a href="characteristics.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['0']?></a>
-            <a href="media.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['1']?></a>
+            <a href="media.php?language=<?php echo $language?>" <?php setcookie("lang", $language); ?>><?php echo $top_nav[$language]['1']?></a>
             <a href="user_exp.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['2']?></a>
             <a href="accessories.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['3']?></a>
             <a href="buy.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['4']?></a>
@@ -52,7 +64,7 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
                 $ru_select='';
                if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['language'])) 
                {
-                   $en_select='selected';      
+                   $en_select='selected';
                }
                if ((isset($_GET['language']) && $_GET['language']=='sk') || !isset($_GET['language']))
                {
@@ -73,7 +85,7 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
         <script>
             function set_language() {
                 var language=jQuery('#language').val();
-                window.location.href='http://localhost/site/index.php?language='+language;
+                window.location.href='http://localhost/ZMTMO-site/index.php?language='+language;
             }
         </script>
         <article class="article" id="mpt"><?php echo $index_tex[$language]['0']?><p>
