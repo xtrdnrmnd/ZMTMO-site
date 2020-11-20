@@ -52,13 +52,13 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
     </head>
     <body>
         <header>
-            <a href="index.php"><img src="Media/logo.png" id="logo"></a>
-            <a href="characteristics.php" >Characteristics</a>
-            <a href="media.php" style="color: #A6D23F;">Media</a>
-            <a href="user_exp.php" >Comments</a>
-            <a href="accessories.php">Accessories</a>
-            <a href="buy.php" >Compare</a>
-            <a href="contacts.php">Contacts</a>
+            <a href="index.php?language=<?php echo $language?>" <?php setcookie("lang", $language); ?>><img src="Media/logo1.svg" id="logo"></a>
+            <a href="characteristics.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['0']?></a>
+            <a href="media.php?language=<?php echo $language?>" style="color: #A6D23F;"><?php echo $top_nav[$language]['1']?></a>
+            <a href="user_exp.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['2']?></a>
+            <a href="accessories.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['3']?></a>
+            <a href="buy.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['4']?></a>
+            <a href="contacts.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['5']?></a>
                     <select onchange="set_language()" name="language" id="language" class="lang">
                         <?php
     $en_select='';
@@ -83,10 +83,17 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
                     </select>
             <hr>
         </header>
-        <p class="text_other" style="top:200px; left:100px;">GIFS</p>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            function set_language() {
+                var language=jQuery('#language').val();
+                window.location.href='http://localhost/ZMTMO-site/other.php?language='+language;
+            }
+        </script>
+        <p class="text_other" style="top:200px; left:100px;"><?php echo $other[$language]['0']?></p>
         <img src="Media/gifs/one.gif" style="position:absolute; top: 300px; left:300px;height:400px;">
         <img src="Media/gifs/two.gif" style="position:absolute; top: 300px; left:900px;height:400px;">
-        <p class="text_other" style="top:700px; left:100px;">RINGTONES</p>
+        <p class="text_other" style="top:700px; left:100px;"><?php echo $other[$language]['1']?></p>
         <audio style="position: absolute; top: 800px; left:100px;" controls>
             <source src="Media/audios/opening.mp3" type="audio/mpeg">
         </audio>

@@ -27,5 +27,15 @@ $media=array('en'=>array('Media/covers/media_cover_1.jpg','Media/covers/media_co
              'ru'=>array('Media/covers/cover_rus_2.jpg', 'Media/covers/cover_rus_3.jpg', 'Media/covers/cover_rus_4.jpg', 'Media/covers/cover_rus_1.jpg'),
              'sk'=>array('Media/covers/cover_sk_2.jpg', 'Media/covers/cover_sk_3.jpg', 'Media/covers/cover_sk_4.jpg', 'Media/covers/cover_sk_1.jpg')
             );
+
+$other=array('en'=>array('GIFS', 'RINGTONES'),
+            'ru'=>array('ГИФКИ', 'РИНГТОНЫ'),
+             'sk'=>array('GIFy', 'ZVONENIA')
+            );
+
+$user_exp=array('en'=>array('Name:', 'Comment', 'Submit', 'Your comment has been submitted!'),
+               'ru'=>array('Имя', 'Комментарий', 'Отправить', 'Ваш комментарий был отправлен'),
+               'sk'=>array('Meno', 'Komentár', 'Predložiť', 'Váš komentár bol odoslaný'));
 ?>
+
 

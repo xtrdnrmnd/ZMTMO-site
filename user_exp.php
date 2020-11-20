@@ -29,6 +29,8 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
     $en_select='selected';
         $language='en';
 }
+
+date_default_timezone_set('Europe/Bratislava');
 ?>
 <html>
     <head>
@@ -37,15 +39,15 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
         <link rel="stylesheet" href="style2.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body style="background-color:white;">
         <header>
             <a href="index.php"><img src="Media/logo1.svg" id="logo"></a>
-            <a href="characteristics.php" >Characteristics</a>
-            <a href="media.php" >Media</a>
-            <a href="user_exp.php" style="color: #A6D23F;">Comments</a>
-            <a href="accessories.php" >Accessories</a>
-            <a href="buy.php" >Compare</a>
-            <a href="contacts.php">Contacts</a>
+            <a href="characteristics.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['0']?></a>
+            <a href="media.php?language=<?php echo $language?>" <?php setcookie("lang", $language); ?>><?php echo $top_nav[$language]['1']?></a>
+            <a style="color: #A6D23F;"><?php echo $top_nav[$language]['2']?></a>
+            <a href="accessories.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['3']?></a>
+            <a href="buy.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['4']?></a>
+            <a href="contacts.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['5']?></a>
                     <select onchange="set_language()" name="language" id="language" class="lang">
                         <?php
     $en_select='';
@@ -70,14 +72,22 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
                     </select>
             <hr>
         </header>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            function set_language() {
+                var language=jQuery('#language').val();
+                window.location.href='http://localhost/ZMTMO-site/user_exp.php?language='+language;
+            }
+        </script>
         <form action="" method="POST">
-            <label> Name:
+            <label> <?php echo $user_exp[$language]['0']?>
                 <input type="text" name="Name" style="width: 295px" required>
             </label><br><br>
-            <label> Comment: <br>
+            <label><?php echo $user_exp[$language]['1']?><br>
                 <textarea name="Comment" style="width: 400px; height: 250px;" required></textarea>
             </label><br><br>
-            <input type="submit" name="Submit" value="Submit Comment" id="sub_btn">
+            <input type="hidden" name="date" value='".date('Y-m-d H:i:s')."'>
+            <input type="submit" name="Submit" value="<?php echo $user_exp[$language]['2']?>" id="sub_btn">
         </form>
         <footer>
             <hr>
