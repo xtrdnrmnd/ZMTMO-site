@@ -1,0 +1,230 @@
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+    .mainmenubtnn {
+        background-color: #A6D23F;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding:20px;
+        margin-top:0px;
+    }
+
+    .mainmenubtn:hover {
+        background-color: #A6D23F;
+        }
+
+    .dropdownn {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdownn-child {
+        display: none;
+        background-color: black;
+        min-width: 200px;
+    }
+    .dropdownn-child a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdownn:hover .dropdownn-child {
+        display: block;
+    }
+    
+    .lang {
+        display: inline-block;
+        float: right;
+        margin: 10px 10px auto auto;
+        font-family: 'Roboto Mono', monospace;
+        background-color: #A6D23F;
+        font-size: 20px;
+        border-radius: 2px;
+    }
+    
+        /* index */
+    .mpt, .cont_mpt {
+        padding: 30px 30px 20px 30px;
+    }
+    
+    #ph {
+        position: absolute;
+        padding: 20px 10px 60px 10px;
+        width: 200px;
+        display: inline-block;
+    }
+    #side {
+        display: none;
+    }
+    #back {
+        width: 320px;
+        display: inline-block;
+        position: absolute;
+        padding: 0px auto 200px 30px;
+        float: right;
+    }
+    /*characteristics*/
+    .table {
+        width: 300px;  
+        background: white;
+        color: black;
+        text-align: center;
+        margin: 10px auto 10px auto;
+    }
+    
+    #prop {
+        position: absolute;
+        color: #FFFFFF;
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        margin: 10px auto 60px auto;
+    }
+    
+    /*media*/
+    .body_media {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .photos_one, .photos_two {
+        padding: 20px 30px 40px 30px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    body img {
+        width: 100%;
+    }
+    
+    footer {
+        bottom:0;
+        left: 0;
+        right: 0;
+    }
+    
+    /*comments*/
+    .comment_name {
+        margin-top: 20px;
+    }
+    
+    .comment_section {
+        margin-left: 20px;
+        width: 280px;
+        height: 40px;
+    }
+    
+    label {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16px;
+        color: #A6D23F;
+        margin-left: 20px;
+    }
+    
+    #sub_btn {
+        background-color: #A6D23F;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    
+    .commentSection {
+        width: 300px;
+        text-align: center; 
+        margin: 10px auto 60px auto;
+        color: white;
+        font-size: 16px;
+        font-family: 'Roboto Mono', monospace;
+    }
+    /*videos*/
+    .video_one, .video_two, .gif, .audio, .photos_left, .photos_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px auto 90px auto; 
+    }
+    
+    .gif, .audio, .photos_left, .photos_right {
+        width: 200px;
+    }
+    
+    video {
+        width: 200px;
+    }
+    /*Articles*/
+    .articles_header {  
+        color: #A6D23F;
+        font-size: 16px;
+        font-family: 'Roboto Mono', monospace;"
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 260px;
+        margin: 20px auto 30px auto;
+    }
+    .articles_links {
+        width: 260px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto 30px auto;
+    }
+    /*Accessories*/
+    .photo_images {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto 30px auto;
+    }
+    /*Contacts*/
+    .info {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto 30px auto;
+        font-family: 'Roboto Mono', monospace;
+        color: #FFFFFF;
+    }
+    #apl, #sup, .more_info, .text_other, .tex2 {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 50px auto 30px auto;
+        font-family: 'Roboto Mono', monospace;
+        color: #FFFFFF;
+    }
+    .more_info, .tex2 {
+        margin: 150px auto 70px auto;
+    }
+    
+    #app {
+        color: #A6D23F; 
+        font-size: 16px;
+        width: 100px;
+        float: left;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .mainmenubtn {
+        font-family: 'Roboto Mono', monospace;
+        background-color: black;
+        border: none;
+        cursor: pointer;
+        padding:10px;
+        color: #A6D23F;
+        font-size: 16px;        
+    }
+    .dropdown {
+        float: right;
+        position: absolute;
+        left: 200px;
+        margin: 30px 20px 60px auto;
+        width: 20px;
+    }
+}

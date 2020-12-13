@@ -1,79 +1,29 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <?php
+include ('lang_switch.php');
+include ('header.php');
+include ('footer.php');
 include('language.php');
-$en_select='';
-$sk_select='';
-$ru_select='';
-$language = '';
-if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='ru') || !isset($_COOKIE['lang'])) {
-    $ru_select='selected';
-        $language='ru';
-}
-if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='sk') || !isset($_COOKIE['lang'])) {
-    $sk_select='selected';
-    $language='sk';
-}
-if ((isset($_COOKIE['lang']) && $_COOKIE['lang']=='en') || !isset($_COOKIE['lang'])) {
-    $en_select='selected';
-        $language='en';
-}
-if ((isset($_GET['language']) && $_GET['language']=='ru') || !isset($_GET['language'])) {
-    $ru_select='selected';
-        $language='ru';
-}
-if ((isset($_GET['language']) && $_GET['language']=='sk') || !isset($_GET['language'])) {
-    $sk_select='selected';
-    $language='sk';
-}
-if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['language'])) {
-    $en_select='selected';
-        $language='en';
-}
+include ('lang_mutations.php');
 ?>
 <html>
     <head>
         <title>characteristics</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="../css/generalStyles.css">
+        <link rel="stylesheet" href="../css/desktop.css">
+        <link rel="stylesheet" href="../css/phone.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header>
-            <a href="index.php?language=<?php echo $language?>" <?php setcookie("lang", $language); ?>><img src="Media/logo1.svg" id="logo"></a>
-            <a style="color: #A6D23F;"><?php echo $top_nav[$language]['0']?></a>
-            <a href="media.php?language=<?php echo $language?>" ><?php echo $top_nav[$language]['1']?></a>
-            <a href="user_exp.php?language=<?php echo $language?>" ><?php echo $top_nav[$language]['2']?></a>
-            <a href="accessories.php?language=<?php echo $language?>" ><?php echo $top_nav[$language]['3']?></a>
-            <a href="buy.php?language=<?php echo $language?>" ><?php echo $top_nav[$language]['4']?></a>
-            <a href="contacts.php?language=<?php echo $language?>"><?php echo $top_nav[$language]['5']?></a>
-            <select onchange="set_language()" name="language" id="language" class="lang">
-                <?php
-               if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['language'])) 
-               {
-                   $en_select='selected';
-               }
-               if ((isset($_GET['language']) && $_GET['language']=='sk') || !isset($_GET['language']))
-               {
-                   $sk_select='selected';
-               }
-                if ((isset($_GET['language']) && $_GET['language']=='ru') || !isset($_GET['language']))
-                {
-                    $ru_select='selected';
-                }?>
-                <option value="ru" <?php echo $ru_select?>>RU</option>
-                <option value="sk"<?php echo $sk_select?>>SK</option>
-                <option value="en"<?php echo $en_select?>>ENG</option>
-            </select>
-            <hr>
-        </header>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
             function set_language() {
                 var language=jQuery('#language').val();
-                window.location.href='http://localhost/ZMTMO-site/characteristics.php?language='+language;
+                window.location.href='http://localhost/ZMTMO-site/php/characteristics.php?language='+language;
             }
         </script>
-        <table class="table" style="left: 100px;" border="1">
+        <table class="table one" border="1">
             <tr>
                 <th><?php echo $buy_tex[$language]['0']?></th>
                 <td><?php echo $buy_tex[$language]['1']?></td>
@@ -91,7 +41,7 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
                 <td><?php echo $buy_tex[$language]['13']?></td>
             </tr>
         </table>
-        <table border="1" class="table" style="width:300px; left:600px;">
+        <table border="1" class="table two">
             <tr>
                 <th><?php echo $charact[$language]['5']?></th>
             </tr>
@@ -108,7 +58,7 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
                 <td>128GB</td>
             </tr>
         </table>
-        <table border="1" class="table" style="width: 300px;left:1000px;">
+        <table border="1" class="table three">
             <tr>
                 <th><?php echo $charact[$language]['0']?></th>
             </tr>
@@ -190,10 +140,5 @@ if ((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langu
             <?php echo $charact[$language]['71']?><br><ul><li><?php echo $charact[$language]['72']?></li></ul><br><br>
             <?php echo $charact[$language]['73']?><br><ul><li><?php echo $charact[$language]['74']?></li></ul><br><br>
         </article>
-        <footer>
-            <hr>
-            <a href="mailto:xtrdnrmnd@gmail.com">xtrdnrmnd@gmail.com</a>
-            <br>©xtrdnrmnd 2020
-        </footer>
     </body>
 </html>

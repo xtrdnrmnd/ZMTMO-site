@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::after,*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+}
+
+
+
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+footer {
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFF;
+    left: 30px;
+    background: #000000;
+    margin-top:100%; 
+    width: 100%;
+    position: fixed; 
+    bottom: 0;
+    z-index: 10;
+}
+
+.foot {
+    border-top: 1px solid black;
+    background-color: black;
+    z-index: 10;
+}
+
+.article {
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.links:visited {
+    color: #A6D23F; 
+} 
+.links:hover {
+    color: #A6D23F;   
+    text-decoration: underline; 
+}
+
+.dropdown {
+        position: absolute;
+        display: inline-block;
+        top: 660px;
+        left:400px;
+
+}
+/*Contacts page numbers dropdown list*/
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}

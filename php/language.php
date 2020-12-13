@@ -1,8 +1,8 @@
 <?php
 $top_nav=array(
-    'en'=>array('Characteristics', 'Media', 'Comments', 'Accessories', 'Compare', 'Contacts'),
-    'ru'=>array('Характеристики', 'Медиа', 'Комментарии', 'Аксессуары', 'Сравнить', 'Контакты'),
-    'sk'=>array('Charakteristiky', 'Médiá', 'Komentáre', 'Doplnky', 'Porovnať', 'Kontakty')
+    'en'=>array('Characteristics', 'Media', 'Comments', 'Accessories', 'Compare', 'Contacts', 'Home page'),
+    'ru'=>array('Характеристики', 'Медиа', 'Комментарии', 'Аксессуары', 'Сравнить', 'Контакты', 'Домашняя страница'),
+    'sk'=>array('Charakteristiky', 'Médiá', 'Komentáre', 'Doplnky', 'Porovnať', 'Kontakty', 'Domovská stránka')
 );
 
 $index_tex=array(
@@ -23,9 +23,9 @@ $charact=array('en'=>array('Colors:','Rose Gold', 'Gold', 'Silver', 'Space Gray'
     'sk'=>array('Farba:','Ružovozlatá', 'Zlatá', 'Strieborná', 'Kozmická sivá', 'Kapacita:', 'Displej:', 'Displej Retina HD s technológiou 3D Touch', '4,7-palcový (diagonálne) širokouhlý displej LCD Multi-Touch s technológiou IPS', 'Rozlíšenie 1 334 x 750 pixlov pri 326 ppi', 'Kontrastný pomer 1 400 : 1 (zvyčajný)', 'Maximálny jas 500 cd/m2 (zvyčajný)', 'Plnohodnotný štandard sRGB', 'Pixle s technológiou dual domain na zlepšenie viditeľnosti obsahu na displeji pri pohľade z uhla', 'Oleofóbna povrchová úprava na prednej strane, odolná voči odtlačkom', 'Podpora pre súčasné zobrazovanie viacerých jazykov a znakov', 'Nastaviteľný zoom displeja', 'Nastavenie dosiahnuteľnosti prvkov na displeji', 'Čip:', 'Čip A9 so 64-bitovou architektúrou', 'Vstavaný pohybový koprocesor M9', 'Kamera:', '12 Mpx kamera', 'Live Photos so stabilizáciou', 'Automatické zaostrovanie s technológiou Focus Pixels', 'Blesk True Tone Flash', 'Panoráma (až 63 megapixlov)', 'Automatické HDR pre fotky', 'Ovládanie expozície', 'Režim nepretržitého snímania', 'Režim časovača', 'Päťdielny objektív', '5x digitálny zoom', 'Hybridný infračervený filter', 'Senzor BSI', 'Kryt objektívu zo zafírového kryštálu', 'Automatická stabilizácia obrazu', 'Lokálne mapovanie odtieňov', 'Redukcia šumu', 'Rozpoznávanie tvárí', 'Geotagging fotiek', 'Nahrávanie videa:', 'Nahrávanie 4K videa pri 30 snímkach/s', 'Nahrávanie 1 080p HD videa pri 30 alebo 60 snímkach/s', 'Nahrávanie 720p HD videa pri 30 snímkach/s', 'Blesk True Tone Flash', 'Podpora pre spomalené video s rozlíšením 1 080p pri 120 snímkach/s a s rozlíšením 720p pri 240 snímkach/s', 'Časozberné video so stabilizáciou', 'Filmová stabilizácia videa (1 080p a 720p)', 'Video s nepretržitým automatickým zaostrovaním', 'Redukcia šumu', 'Snímanie 8 Mpx fotiek počas nahrávania 4K videa', 'Zoomovanie pri prehrávaní', '3-násobný zoom', 'Rozpoznávanie tvárí', 'Geotagging videí', 'Napájanie a batéria:', 'Čas hovoru: až do 14 hodín v sieti 3G', 'Používanie internetu: až do 10 hodín v sieti 3G a 11 hodín v sieti Wi‑Fi', 'Prehrávanie HD videa: až do 11 hodín', 'Prehrávanie zvuku: až do 50 hodín', 'Pohotovostný režim: až do 10 dní', 'Vstavaná nabíjateľná lítiovo-iónová batéria', 'Nabíjanie prostredníctvom rozhrania USB z počítača alebo napájacieho adaptéra', 'Senzory:', 'Senzor odtlačku prsta Touch ID', 'Barometer', 'Trojosový gyroskop', 'Akcelerometer', 'Senzor blízkosti', 'Senzor okolitého svetla', 'Operačný systém:', 'iOS 11', 'SIM karta:', 'Nano-SIM')
               );
 
-$media=array('en'=>array('Media/covers/media_cover_1.jpg','Media/covers/media_cover_3.jpg', 'Media/covers/media_cover_4.jpg', 'Media/covers/media_cover_2.jpg'),
-             'ru'=>array('Media/covers/cover_rus_2.jpg', 'Media/covers/cover_rus_3.jpg', 'Media/covers/cover_rus_4.jpg', 'Media/covers/cover_rus_1.jpg'),
-             'sk'=>array('Media/covers/cover_sk_2.jpg', 'Media/covers/cover_sk_3.jpg', 'Media/covers/cover_sk_4.jpg', 'Media/covers/cover_sk_1.jpg')
+$media=array('en'=>array('../Media/covers/media_cover_1.jpg','../Media/covers/media_cover_3.jpg', '../Media/covers/media_cover_4.jpg', '../Media/covers/media_cover_2.jpg'),
+             'ru'=>array('../Media/covers/cover_rus_2.jpg', '../Media/covers/cover_rus_3.jpg', '../Media/covers/cover_rus_4.jpg', '../Media/covers/cover_rus_1.jpg'),
+             'sk'=>array('../Media/covers/cover_sk_2.jpg', '../Media/covers/cover_sk_3.jpg', '../Media/covers/cover_sk_4.jpg', '../Media/covers/cover_sk_1.jpg')
             );
 
 $other=array('en'=>array('GIFS', 'RINGTONES'),
@@ -36,6 +36,19 @@ $other=array('en'=>array('GIFS', 'RINGTONES'),
 $user_exp=array('en'=>array('Name:', 'Comment', 'Submit', 'Your comment has been submitted!'),
                'ru'=>array('Имя', 'Комментарий', 'Отправить', 'Ваш комментарий был отправлен'),
                'sk'=>array('Meno', 'Komentár', 'Predložiť', 'Váš komentár bol odoslaný'));
+
+$articles=array('en'=>array('Here you can find links to all the Iphone 6s related articles:'),
+                'ru'=>array('Здесь вы можете найти ссылки на все статьи, посвященные Iphone 6s:'),
+               'sk'=>array('Odkazy na všetky články o Iphone 6s nájdete tu:'));
+
+$contacts=array('en'=>array('Corporate address:', 'If you need product or service support:', 'The apple<br>support page', 'Helpful numbers', 'United States', 'Canada', 'Brazil', 'Austria', 'Czech Republic', 'Russia', 'Slovakia', 'For more information you can go to the Apple Inc. web site'),
+                'ru'=>array('Корпоративный адрес', 'Если вам нужна техническая поддержка: ', 'Сайт техподдерки Apple', 'Полезные номера', 'США', 'Канада', 'Бразилия', 'Австрия', 'Чехия', 'Россия', 'Словакия', 'Чтобы получить больше информации, вы можете обратиться на сайт компании Apple'),
+                'sk'=>array('Adresa spoločnosti:','Ak potrebujete podporu produktu alebo služby:', 'Stránka podpory pre Apple', 'Užitočné čísla', 'USA', 'Kanada', 'Brazília', 'Rakúsko', 'Česko', 'Rusko', 'Slovensko', 'Ďalšie informácie nájdete na webových stránkach spoločnosti Apple Inc.')
+
+);
+
 ?>
+
+
 
 
