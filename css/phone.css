@@ -67,20 +67,12 @@
         float: right;
     }
     /*characteristics*/
-    .table {
+    .table, .table_buy {
         width: 300px;  
         background: white;
         color: black;
         text-align: center;
         margin: 10px auto 10px auto;
-    }
-    
-    #prop {
-        position: absolute;
-        color: #FFFFFF;
-        font-family: 'Roboto Mono', monospace;
-        text-align: center;
-        margin: 10px auto 60px auto;
     }
     
     /*media*/
@@ -137,14 +129,14 @@
         font-family: 'Roboto Mono', monospace;
     }
     /*videos*/
-    .video_one, .video_two, .gif, .audio, .photos_left, .photos_right {
+    .video_one, .video_two, .gif, .audio, .photos_left, .photos_right, .table_buy, .img_buy {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 40px auto 90px auto; 
     }
     
-    .gif, .audio, .photos_left, .photos_right {
+    .gif, .audio, .photos_left, .photos_right, .img_buy {
         width: 200px;
     }
     
@@ -188,7 +180,7 @@
         font-family: 'Roboto Mono', monospace;
         color: #FFFFFF;
     }
-    #apl, #sup, .more_info, .text_other, .tex2 {
+    #apl, #sup, .more_info, .text_other, .tex2, #prop {
         width: 270px;
         display: flex;
         flex-direction: column;
@@ -226,5 +218,9 @@
         left: 200px;
         margin: 30px 20px 60px auto;
         width: 20px;
+    }
+    .table_buy tr {
+        color: black;
+    }
     }
 }

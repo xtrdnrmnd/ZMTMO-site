@@ -14,25 +14,6 @@ include ('lang_mutations.php');
         <link rel="stylesheet" href="../css/phone.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            .img {
-                position: absolute;
-                top: 200px;
-                height: 400px;
-            }
-            table {
-                color: white;
-                position: absolute;
-                top: 600px;
-                left: 100px;
-            }
-            tr {
-                color: black;
-            }
-            td {
-                width: 370px;
-            }
-        </style>
     </head>
     <body>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -42,10 +23,10 @@ include ('lang_mutations.php');
                 window.location.href='http://localhost/ZMTMO-site/php/buy.php?language='+language;
             }
         </script>
-        <img class="img" src="../Media/front.png" style="left: 200px;">
-        <img class="img" src="../Media/photos/iphone7.png" style="left: 600px;">
-        <img class="img" src="../Media/photos/iphone8.png" style="left: 1000px;">
-        <div style="position: absolute; height: 800px;margin-bottom: 300px;width: 100%"><table border="1">
+        <img class="img_buy buy1" src="../Media/front.png" >
+        <img class="img_buy buy2" src="../Media/iphone7.png">
+        <img class="img_buy buy3" src="../Media/iphone8.png">
+        <div class="table_buy"><table border="1">
             <tr>
                 <th><?php echo $buy_tex[$language]['0']?></th>
                 <td><?php echo $buy_tex[$language]['1']?></td>

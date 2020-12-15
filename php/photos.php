@@ -28,13 +28,11 @@ include ('lang_mutations.php');
             }
         </script>
         <div>
-            <a data-fancybox="gallery" href="../Media/photos/1.JPG"><img src="../Media/photos/1.JPG" class="photos_left photo1"></a><br>
-            <a data-fancybox="gallery" href="../Media/photos/2.JPG"><img src="../Media/photos/2.JPG" class="photos_right photo2"></a><br>
-            <a data-fancybox="gallery" href="../Media/photos/3.JPG"><img src="../Media/photos/3.JPG" class="photos_left photo3"></a><br><br>
-            <a data-fancybox="gallery" href="../Media/photos/4.JPG"><img src="../Media/photos/4.JPG" class="photos_right photo4"></a><br>
-            <a data-fancybox="gallery" href="../Media/photos/5.JPG"><img src="../Media/photos/5.JPG" class="photos_left photo5"></a><br><br>
-            <a data-fancybox="gallery" href="../Media/photos/6.JPG"><img src="../Media/photos/6.JPG" class="photos_right photo6"></a><br>
-            <a data-fancybox="gallery" href="../Media/photos/7.JPG"><img src="../Media/photos/7.JPG" class="photos_left photo7"></a><br>
+            <?php
+            $class=array('<a data-fancybox="gallery" href="../Media/photos/1.JPG">', '<a data-fancybox="gallery" href="../Media/photos/2.JPG">');
+            for ( $u=1; $u<=7;$u++) {
+                echo $class[$u]."<img src='../Media/photos/".$u.".JPG' class='photos_left photo".$u."'></a><br>";
+            }?>
         </div>
     </body>
 </html>

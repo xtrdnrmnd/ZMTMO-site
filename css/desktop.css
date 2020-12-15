@@ -197,6 +197,7 @@
         color: white;
         font-size: 24px;
         font-family: 'Roboto Mono', monospace;
+        margin-bottom: 200px;
     }
     
     .photos_one {
@@ -348,7 +349,8 @@
     .photos_left {
         position: absolute;
         width: 300px;
-        margin-left: 300px
+        margin-left: 300px;
+        margin-top: 50px;
     }
     .photo1 {
         top: 200px;
@@ -370,5 +372,37 @@
     }
     .photo7 {
         top: 1700px;
+    }
+    
+    .img_buy {
+        position: absolute;
+        top: 200px;
+        height: 400px;
+    }
+    .buy1 {
+        left:200px;
+    }
+    .buy2 {
+        left:600px;
+    }
+    .buy3 {
+        left:1000px;
+    }
+    .table_buy {
+        position: absolute;
+        top: 600px;
+        left: 100px;
+        position: absolute; 
+        margin-bottom: 300px;
+        width: 1200px;
+        height: 100px;
+        background: white;
+        color: black;
+    }
+    .table_buy tr{
+        color: black;
+    }
+    .table_buy td{
+        width: 370px;
     }
 }

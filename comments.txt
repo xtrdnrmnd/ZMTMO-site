@@ -1,8 +1,8 @@
-<b>Jane</b><br>Hello<br>
-<b>Jane</b><br>Hello<br>
+<b>dfjdhf</b><br>dfkdf<br>
+<b>Max</b><br>ereee<br>
+<b>cjbcj</b><br>dknd<br>
 <b>Luke</b><br>J'ai vraiment aimé ce portable<br>
 <b>Peter</b><br>Like<br>
-<b>Полина</b><br>Уже почти три года пользуюсь этим телефоном, и, несмотря на то, что в данный момент на рынке эта модель считается устаревшей, считаю данный продукт одним из самых удачных в истории Apple<br>
 <b>Kate </b><br>Amazing phone with outstanding properties<br>
 <b>Jane</b><br>I really liked using this phone<br>
 

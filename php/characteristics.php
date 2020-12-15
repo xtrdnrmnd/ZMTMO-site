@@ -131,7 +131,7 @@ include ('lang_mutations.php');
             <li><?php echo $charact[$language]['61']?></li>
             <li><?php echo $charact[$language]['62']?></li>
             <li><?php echo $charact[$language]['63']?></li></ul><br><br>
-            <?php echo $charact[$language]['64']?><br><ul><li><?php echo $charact[$language]['65']?></li>
+            <?php echo $charact[$language]['64']?><br><ul>
             <li><?php echo $charact[$language]['66']?></li>
             <li><?php echo $charact[$language]['67']?></li>
             <li><?php echo $charact[$language]['68']?></li>
